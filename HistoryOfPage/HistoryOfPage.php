@@ -72,10 +72,10 @@ function hpParserFunction_Render ( $parser, $param1='' ) {
     );
     foreach( $res as $row ) {
         if ($outputLink=='') {
-            $outputLink = $url."/mms/index.php?title=$pageTitle&oldid=$row->rev_id (Revision as of ".wfTimestamp(TS_RFC2822,$row->rev_timestamp).")";
+            $outputLink = $url."/index.php?title=$pageTitle&oldid=$row->rev_id (Revision as of ".wfTimestamp(TS_RFC2822,$row->rev_timestamp).")";
         }
         else {
-            $outputLink = $outputLink."<br>".$outputLink = $url."/mms/index.php?title=$pageTitle&oldid=$row->rev_id (Revision as of ".wfTimestamp(TS_RFC2822,$row->rev_timestamp).")";
+            $outputLink = $outputLink."<br>".$outputLink = $url."/index.php?title=$pageTitle&oldid=$row->rev_id (Revision as of ".wfTimestamp(TS_RFC2822,$row->rev_timestamp).")";
         }
         
     }
